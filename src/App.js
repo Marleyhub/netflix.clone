@@ -1,4 +1,4 @@
-import react, {useEstate,useEffect} from 'react'
+import react, {useState,useEffect} from 'react'
 import Tmdb from './Tmdb'
 
 export default () => {
