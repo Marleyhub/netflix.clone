@@ -9,7 +9,6 @@ return json
 
 }
 
-
 export default {
      getHomeList: async () => {
         return [
