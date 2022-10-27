@@ -6,6 +6,7 @@ const basicFetch = async (endpoint) =>{
 const req = await fetch(`${API_BASE}${endpoint}`)
 const json = await req.json() 
 return json
+
 }
 
 
@@ -52,6 +53,7 @@ export default {
             title:'Documentary',
             item:(`discover/movie?99&api_key=${API_KEY}`)
             },
+            
         ]
     }
 }
