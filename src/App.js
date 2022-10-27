@@ -11,7 +11,7 @@ export default () => {
         const loadAll = async () => {
          let list = await Tmdb.getHomeList()
          setMovieList(list)
-         console.log(list)
+        
         }
  
     loadAll()
@@ -22,7 +22,7 @@ export default () => {
          <section className='lists'>
         {movieList.map((item, key) => (
 
-         <Movierow key={key} item={item.item} title={item.title}/>
+         <Movierow key={key} items={item.item} title={item.title}/>
             
         ))}
          </section>

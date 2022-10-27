@@ -2,13 +2,16 @@ import React from 'react'
 import './Movierow.css'
 
 
-export default ({title, item}) => {
+export default ({title, items}) => {
+
+    console.log(items)
+    console.log(title)
 
     return(
     <div>
      <h2>{title}</h2>
     <section>
-        {item.results.length > 0 && item.results.map((item, key)=>(
+        {items.results.length > 0 && items.results.map((item, key)=>(
             <img src={`https://image.tmdb/t/p/w300${item.poster_path}`}/>
         ))}
     </section>

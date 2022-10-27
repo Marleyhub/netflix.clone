@@ -11,47 +11,47 @@ return json
 
 
 export default {
-    getHomeList: async () => {
+     getHomeList: async () => {
         return [
             {
              slug: 'originals',
              title: 'Netflix originals',
-             item: basicFetch( `discover/tv?with_network=213&api_key=${API_KEY}`)
+             item: await basicFetch( `/discover/tv?with_networks=213&api_key=${API_KEY}`)
             },
             {
              slug: 'trending',
              title: 'We suggest to you',
-             item: (`trending/all/week&api_key=${API_KEY}`)
+             item: await basicFetch(`/trending/all/week?api_key=${API_KEY}`)
             },
             {
             slug:'toprated',
             title:'Top rated',
-            item:(`movie/top_rated&api_key=${API_KEY}}`)
+            item: await basicFetch(`/movie/top_rated?language=pt-BR&api_key=${API_KEY}`)
             },
             {
             slug:'action',
             title: 'Action',
-            item:(`discover/movie?28&api_key=${API_KEY}`)
+            item: await basicFetch(`/discover/movie?with_genres=28&api_key=${API_KEY}`)
             },
             {
             slug: 'comedy',
             title:'Comedy',
-            item:(`discover/movie?35&api_key=${API_KEY}`)
+            item: await basicFetch(`/discover/movie?with_genres=35&api_key=${API_KEY}`)
             },
             {
             slug:'terror',
             title: 'Terror',
-            item:(`discover/movie?27&api_key=${API_KEY}`)
+            item: await basicFetch(`/discover/movie?with_genres=27&api_key=${API_KEY}`)
             },
             {
             slug:'romance',
             title:'Romance',
-            item:(`discover/movie?10749&api_key=${API_KEY}`)
+            item: await basicFetch(`/discover/movie?with_genres=10749&api_key=${API_KEY}`)
             },
             {
             slug:'documentary',
             title:'Documentary',
-            item:(`discover/movie?99&api_key=${API_KEY}`)
+            item: await basicFetch(`/discover/movie?with_genres=99&api_key=${API_KEY}`)
             },
             
         ]
