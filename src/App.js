@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Tmdb from './Tmdb'
 import Movierow from './components/Movierow'
-
+import './App.css'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     
