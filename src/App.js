@@ -4,6 +4,7 @@ import Movierow from './components/Movierow'
 import './App.css'
 import './components/FeaturedMovie'
 import FeaturedMovie from './components/FeaturedMovie'
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     

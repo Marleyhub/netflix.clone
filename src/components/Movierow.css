@@ -1,7 +1,6 @@
 .movieRow {
     margin-bottom: 30px;
 }
-
 .movieRow h2 {
     margin: 0px 0px 0px 36px;
 }
@@ -15,7 +14,6 @@
     display: inline-block;
     width: 150px;
 }
-
 .movieRow--item img {
     width: 100%;
     transform: scale(0.9);
@@ -24,3 +22,4 @@
 .movieRow--item img:hover {
     transform: scale(1);
 }
+ 
