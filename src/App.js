@@ -4,6 +4,7 @@ import Movierow from './components/Movierow'
 import './App.css'
 import './components/FeaturedMovie'
 import FeaturedMovie from './components/FeaturedMovie'
+import Header from './components/Header'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -30,6 +31,7 @@ export default () => {
     
     return (
         <div className='page'>
+            <Header/>
 
             {FeaturedData && <FeaturedMovie item={FeaturedData}/> }
 
