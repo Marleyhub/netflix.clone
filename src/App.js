@@ -10,7 +10,8 @@ import Header from './components/Header'
 export default () => {
     
     const [movieList, setMovieList] = useState([])
-    const [FeaturedData, setFeaturedData] = useState([])
+    const [FeaturedData, setFeaturedData] = useState(null)
+    const [blackHeader, setBlackHeader] = useState(  )
 
     useEffect(()=>{
         const loadAll = async () => {
@@ -28,10 +29,23 @@ export default () => {
     loadAll()
 
     },[])
+
+    useEffect(()=>{
+        const scrollListener = () => {
+            if(window.scrollY > 10){
+                setBlackHeader(true)
+            }else{
+                setBlackHeader(false)
+            }}
+            window.addEventListener('scroll', scrollListener)
+            return() =>{
+            window.removeEventListener('scroll', scrollListener)
+        }
+    },[])
     
     return (
         <div className='page'>
-            <Header/>
+            <Header black={blackHeader}/>
 
             {FeaturedData && <FeaturedMovie item={FeaturedData}/> }
 
@@ -40,6 +54,11 @@ export default () => {
          <Movierow key={key} items={item.item} title={item.title}/>
         ))}
          </section>
+         <footer className='footer'>
+             Feito exclusivamente para fins didaticos <br/>
+             Desenvolvoido por Gabriel Marley <br/>
+             Dados ultilizados do Themoviedb.org
+         </footer>
         </div>
     )
 }
