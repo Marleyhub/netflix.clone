@@ -58,7 +58,7 @@ export default () => {
              Feito exclusivamente para fins didaticos <br/>
              Desenvolvoido por Gabriel Marley <br/>
              Dados ultilizados do Themoviedb.org
-         </footer>
+         </footer>   
         </div>
     )
 }
