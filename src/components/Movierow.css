@@ -6,7 +6,6 @@
 }
 .movieRow--listarea {
     overFlow-x: hidden;
-    width: 99999999px;
     padding-left: 30px;
 }
 
@@ -23,12 +22,16 @@
     transform: scale(1);
 }
 
+.movieRow--list {
+    transition: all ease 0,5s
+} 
+
 .navigation--left,
 .navigation--rigth {
     position: absolute;
     width: 40px;
     height: 225px;
-    background-color: rgba(0,0,0,0.2    );
+    background-color: rgba(0,0,0,0.2);
     z-index: 99;
     display: flex;
     align-items: center;
