@@ -28,7 +28,7 @@
     position: absolute;
     width: 40px;
     height: 225px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.2    );
     z-index: 99;
     display: flex;
     align-items: center;
