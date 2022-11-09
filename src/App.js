@@ -59,6 +59,11 @@ export default () => {
              Desenvolvoido por Gabriel Marley <br/>
              Dados ultilizados do Themoviedb.org
          </footer>   
+         {movieList.length <= 0 &&
+          <div className='loading'>
+          <img src='https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w50%2Cc_limit/Netflix_LoadTime.gif' alt='loading'/>
+         </div>}
+        
         </div>
     )
 }
