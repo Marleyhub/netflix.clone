@@ -12,6 +12,7 @@
 .movieRow--item {
     display: inline-block;
     width: 150px;
+    
 }
 .movieRow--item img {
     width: 100%;
@@ -23,7 +24,7 @@
 }
 
 .movieRow--list {
-    transition: all ease 0,5s
+    transition: all ease 0.5s;
 } 
 
 .navigation--left,
