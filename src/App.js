@@ -55,7 +55,7 @@ export default () => {
         ))}
          </section>
          <footer className='footer'>
-             Feito exclusivamente para fins didaticos <br/>
+             Feito exclusivamente para fins didáticos <br/>
              Desenvolvoido por Gabriel Marley <br/>
              Dados ultilizados do Themoviedb.org
          </footer>   
