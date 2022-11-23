@@ -19,7 +19,7 @@ export default () => {
          setMovieList(list)
         
         let originals = list.filter(i => i.slug === "originals")
-        let randomChosen = Math.floor(Math.random() * (originals[0].item.results.length - 1))
+        let randomChosen = Math.floor(Math.random() *   (originals[0].item.results.length - 1))
         let chosen = originals[0].item.results[randomChosen]
         let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv')
         setFeaturedData(chosenInfo)
